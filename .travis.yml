@@ -15,5 +15,9 @@ node_js:
 before_script:
   - npm install -g bower polymer-cli
   - bower install
+  - npm install -g firebase-tools
 script:
   - xvfb-run polymer test
+  - polymer build
+  - firebase use development
+  - firebase deploy
