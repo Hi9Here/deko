@@ -19,4 +19,4 @@ before_script:
 script:
   - xvfb-run polymer test
   - polymer build
-  - firebase deploy --token "1/k6xFwwFt6yDOCyl5kcW-ID_gN7fgf0Td4SajZkFPdTE21TGkXcBsSO4lbv3jIxEy" -m "Auto deployed by Travis"
+  -  - firebase deploy --token=${FIREBASE_API_TOKEN}
