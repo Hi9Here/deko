@@ -6,25 +6,27 @@
     <style include="shared-styles">
       :host {
         display: block;
-
+        vertical-align: top;
         padding: 10px;
+      }
+      #biggercard {
+        width: 60%;
+      }
+      #smallercard {
+        width: 35%;
       }
     </style>
 
-   
-      <div class="circle">1</div>
+      <!-- Remember the tag below is the test --> 
       <h1>view1</h1>
       
-      <paper-card heading="" image="" elevation="1" animated-shadow="false">
+      <paper-card image="images/deko-main.jpg" elevation="1" animated-shadow="false" id="biggercard">
         <div class="card-content">
-
-        </div>
-        <div class="card-actions">
           
         </div>
       </paper-card>
 
-      <paper-card heading="Organises Web Content and Links onto Cards" image="" elevation="1" animated-shadow="false">
+      <paper-card heading="Organises Web Content and Links onto Cards" elevation="1" animated-shadow="false" id="smallercard">
         <div class="card-content">
           
         </div>
