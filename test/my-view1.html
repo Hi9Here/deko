@@ -27,9 +27,9 @@
           home = fixture('basic');
         });
 
-        test('Text in h1 should be view1', function() {
-          var textTitle = Polymer.dom(home.root).querySelector('h1');
-          assert.equal(textTitle.textContent, 'view1');
+        test('Text in paper-fab should be paper-fab', function() {
+          var textTitle = Polymer.dom(home.root).querySelector('paper-fab');
+          assert.equal(textTitle.textContent, 'contact');
         })
       });
     </script>
