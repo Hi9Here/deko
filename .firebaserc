@@ -1,6 +1,5 @@
 {
   "projects": {
-    "default": "deko-site",
-    "development": "deko-site"
+    "default": "deko-site"
   }
 }
