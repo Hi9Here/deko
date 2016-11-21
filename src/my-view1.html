@@ -4,7 +4,13 @@
 <dom-module id="my-view1">
   <template>
     <style include="shared-styles">
-     
+      #emailsignup {
+        width: 150px;
+        margin-right: 20px;
+      }
+      .signup {
+        display: inline-block;
+      }
     </style>
 
       <div id="bg">
@@ -18,8 +24,13 @@
 
           <paper-card image="images/deko-logo.png" elevation="1" animated-shadow="false" class="smallercard">   
             <div class="card-content">
-              <h1>Organise Web Content and Links Onto Cards</h1>
+              <h1>Organise Web Content and Links Onto Cards</h1> 
+              <p>Become an Early Adopter</p>      
             </div>  
+            <div class="card-actions">
+              <paper-input label="your@email.com" id="emailsignup" class="signup"></paper-input>
+              <paper-button raised class="signup">Sign Up</paper-button>     
+            </div>
             <paper-fab icon="add"></paper-fab> 
           </paper-card>
 
@@ -58,7 +69,7 @@
         
       </div>
       
-      <paper-button raised>Sign Up</paper-button>
+      <paper-button raised id="contactus">Contact Us</paper-button>
       
   </template>
 
