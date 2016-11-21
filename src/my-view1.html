@@ -4,60 +4,61 @@
 <dom-module id="my-view1">
   <template>
     <style include="shared-styles">
-      :host {
-        display: block;
-        padding: 10px;
-        text-align: center;
-      }
-      .biggercard {
-        width: 55%;
-      }
-      .smallercard {
-        width: 35%;
-      }
-      paper-card {
-        display:inline-block;
-        text-align: left;
-        margin: 10px;
-        height: 400px;
-        vertical-align: top;
-      }
-      paper-button {
-        position: absolute;
-        right: 40px;
-        bottom: 40px;
-        background-color: red;
-        color: #fff;
-      }
-      @media only screen and (max-device-width : 700px)  {
-        .biggercard {
-          width: 90%;
-        }
-        .smallercard {
-          width: 90%;
-        }
-      }
+     
     </style>
 
-      <!-- Remember the tag below is the test --> 
-      <h1>view1</h1>
-      
-      <paper-card image="images/deko-main.jpg" elevation="1" animated-shadow="false" class="biggercard">
-        <div class="card-content">
-          
-        </div>
-      </paper-card>
+      <div id="bg">
+        <div class="papercards">
 
-      <paper-card heading="Organises Web Content and Links onto Cards" elevation="1" animated-shadow="false" class="smallercard">
-        <div class="card-content">
+          <paper-card image="images/deko-main.jpg" elevation="1" animated-shadow="false" class="biggercard">   
+            <div class="card-content">
+              
+            </div>
+          </paper-card>
+
+          <paper-card image="images/deko-logo.png" elevation="1" animated-shadow="false" class="smallercard">   
+            <div class="card-content">
+              <h1>Organise Web Content and Links Onto Cards</h1>
+            </div>  
+            <paper-fab icon="add"></paper-fab> 
+          </paper-card>
+
+          <paper-card heading="Organises Web Content and Links onto Cards" elevation="1" animated-shadow="false" class="fullcard">
+            <paper-fab icon="favorite"></paper-fab>   
+            <div class="card-content">
+              
+            </div>
+            <div class="card-actions">
+              
+            </div>
+          </paper-card>
           
-        </div>
-        <div class="card-actions">
+          <paper-card heading="Organises Web Content and Links onto Cards" elevation="1" animated-shadow="false" class="fullcard">
+            <div class="card-content">
+              
+            </div>
+            <div class="card-actions">
+              
+            </div>
+          </paper-card>
           
+          <paper-card heading="Organises Web Content and Links onto Cards" elevation="1" animated-shadow="false" class="fullcard">
+            <div class="card-content">
+              
+            </div>
+            <div class="card-actions">
+              
+            </div>
+          </paper-card>
         </div>
-      </paper-card>
+
+        <footer>
+
+        </footer>
+        
+      </div>
       
-      <paper-button raised>Contact Us</paper-button>
+      <paper-button raised>Sign Up</paper-button>
       
   </template>
 
