@@ -11,6 +11,10 @@
       .signup {
         display: inline-block;
       }
+      #signup-p {
+        margin: 0;
+      }
+
     </style>
 
       <div id="bg">
@@ -25,7 +29,7 @@
           <paper-card image="images/deko-logo.png" elevation="1" animated-shadow="false" class="smallercard">   
             <div class="card-content">
               <h1>Organise Web Content and Links Onto Cards</h1> 
-              <p>Become an Early Adopter</p>      
+              <p id="signup-p">Find the web overwhelming? Just want to see what’s important to you? Choose & save content onto cards, organise those cards into decks then share what you want with who you want</p>      
             </div>  
             <div class="card-actions">
               <paper-input label="your@email.com" id="emailsignup" class="signup"></paper-input>
@@ -69,7 +73,7 @@
         
       </div>
       
-      <paper-button raised id="contactus">Contact Us</paper-button>
+      <paper-button raised id="contactus"><iron-icon icon="mail"></iron-icon>Contact Us</paper-button>
       
   </template>
 
