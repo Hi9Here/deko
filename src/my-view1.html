@@ -2,8 +2,9 @@
 <link rel="import" href="shared-styles.html">
 
 <dom-module id="my-view1">
+
   <template>
-     
+
     <style include="shared-styles">
       #emailsignup {
         width: 150px;
@@ -28,7 +29,10 @@
           <!--Call to Action Card-->
           <paper-card heading="Call to Action" elevation="1" animated-shadow="false" class="smallercard">   
             <div class="card-content">
-              <p id="signup-p">Find the web overwhelming? Just want to see what’s important to you? Choose & save content onto cards, organise those cards into decks then share what you want with who you want</p>      
+              <p id="signup-p">Find the web overwhelming? Just want to see what’s important to you?</p>
+              <p> Here's how</p>
+              <p>Choose & save content onto cards, organise those cards into decks then share what you want with who you want</p>
+              <p>It's as simple as that</p>      
             </div>  
             <div class="card-actions">
               <paper-input label="your@email.com" id="emailsignup" class="signup"></paper-input>
@@ -79,9 +83,9 @@
       
   </template>
 
-  <script>
-    Polymer({
-      is: 'my-view1'
-    });
-  </script>
+    <script>
+        Polymer({
+            is: 'my-view1'
+        });
+    </script>
 </dom-module>
