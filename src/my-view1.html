@@ -13,6 +13,11 @@
         display: inline-block;
         text-align: top;
       }
+      .biggercard {
+         --paper-card-header : {
+          background-color: #fff;
+        }
+      }
 
     </style>
 
@@ -21,9 +26,6 @@
 
           <!--First Card with Image of Screens-->
           <paper-card image="images/deko-big-top.png" elevation="1" animated-shadow="false" class="biggercard">   
-            <div class="card-content">
-              
-            </div>
           </paper-card>
 
           <!--Call to Action Card-->
@@ -36,12 +38,13 @@
             </div>  
             <div class="card-actions">
               <paper-input label="your@email.com" id="emailsignup" class="signup"></paper-input>
-              <paper-button raised class="signup">Sign Up</paper-button>     
+              <paper-button raised class="signup"><iron-icon icon="done"></iron-icon>Sign Up</paper-button>     
             </div>
           </paper-card>
 
           <!--Row 2 1st Card-->
-          <paper-card heading="For You" elevation="1" animated-shadow="false" class="smallercard">  
+          <paper-card heading="For You" elevation="1" animated-shadow="false" class="smallercard">        
+            <iron-icon icon="face" class="card-icon"></iron-icon>  
             <div class="card-content">
               <p>Looking for a simple solution to organising, storing & keeping up to date with all your web content in one place?</p>
               <p>Want to share content from breaking news to recipes, invites to events or links to favourite sites. Use deko</p>
@@ -53,6 +56,7 @@
           
           <!--Row 2 2nd Card-->
           <paper-card heading="For Loved Ones" elevation="1" animated-shadow="false" class="smallercard">
+            <iron-icon icon="favorite" class="card-icon"></iron-icon>
             <div class="card-content">
               <p>Don’t have the time to be your parents tech. support? Solve the problem & your frustrations using deko.</p>
               <p>Replace traditional “search” with clear, simple to understand cards containing your choice content</p>
@@ -64,6 +68,7 @@
 
           <!--Row 3 3rd Card-->
           <paper-card heading="For Work" elevation="1" animated-shadow="false" class="smallercard">
+            <iron-icon icon="social:domain" class="card-icon"></iron-icon> 
             <div class="card-content">
               <p>Some Card Text</p>
             </div>
