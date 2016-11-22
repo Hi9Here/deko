@@ -27,8 +27,8 @@
           home = fixture('basic');
         });
 
-        test('Text in paper-button should be Contact Us', function() {
-          var textTitle = Polymer.dom(home.root).querySelector('paper-button');
+        test('Text in #contactus should be Contact Us', function() {
+          var textTitle = Polymer.dom(home.root).querySelector('#contactus');
           assert.equal(textTitle.textContent, 'Contact Us');
         })
       });
