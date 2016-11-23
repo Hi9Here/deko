@@ -21,6 +21,7 @@
       }
       .smallercard {
         width: 24%;
+        overflow: hidden;
       }
       .fullcard {
         width: 75%
@@ -50,7 +51,7 @@
         color: #fff;
       }
       paper-button iron-icon {
-        margin-right: 10px;
+        margin-right: 5px;
       }
       paper-card {
         --paper-card-actions: {
@@ -102,7 +103,7 @@
         color: green;
       }
        
-      @media only screen and (max-device-width : 1000px)  {
+      @media only screen and (max-device-width : 1200px)  {
         .biggercard {
           width: 90%;
           height: 300px;
@@ -118,6 +119,14 @@
           bottom: 30px;
         }
       }
+      @media only screen and (-webkit-min-device-pixel-ratio: 2) { 
+        paper-card p {
+          font-size: 18px;
+        }
+        .smallercard {
+          height: 450px;
+        }   
+      } 
 
     </style>
   </template>

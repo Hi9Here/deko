@@ -11,12 +11,20 @@
       }
       .signup {
         display: inline-block;
-        text-align: top;
+      }
+      paper-button.signup  {
+        width: 110px;
+        height: 40px;
+        font-size: 16px;
+        text-align: center;
       }
       .biggercard {
          --paper-card-header : {
           background-color: #fff;
         }
+      }
+      #cta-card {
+        height: 500px;
       }
     </style>
 
@@ -28,7 +36,7 @@
           </paper-card>
 
           <!--Call to Action Card-->
-          <paper-card heading="Call to Action" elevation="1" animated-shadow="false" class="smallercard">   
+          <paper-card heading="Call to Action" elevation="1" animated-shadow="false" class="smallercard" id="cta-card">   
             <div class="card-content">
               <p id="signup-p">Find the web overwhelming? Just want to see what’s important to you?</p>
               <p> Here's how</p>
@@ -82,7 +90,7 @@
           <paper-card elevation="1" animated-shadow="false" class="divider-card">
             <div class="card-content">
               <h2>"Computers Are Just Too Hard to Use and It's Not Your Fault"</h2>
-              <h2>Walt Mossberg – Executive Editor - Verge</h2>
+              <h2>Walt Mossberg – Executive Editor - The Verge</h2>
             </div>
           </paper-card>
 
