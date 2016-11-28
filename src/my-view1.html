@@ -47,7 +47,10 @@
               <p>It's as simple as that</p>      
             </div>  
             <div class="card-actions">
-              <gold-email-input label="your email address" auto-validate error-message="Please enter a valid email" id="emailsignup" class="signup"></gold-email-input>
+              
+              <form is="iron-form" id="form" method="post" action="/form/handler">
+                <gold-email-input label="your email address" auto-validate error-message="Please enter a valid email" id="emailsignup" class="signup"></gold-email-input>
+              </form>        
               <paper-button raised class="signup">Sign Up</paper-button>     
             </div>
           </paper-card>
