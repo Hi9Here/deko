@@ -7,7 +7,7 @@
 
     <style include="shared-styles">
       #emailsignup {
-        
+        width: 200px;
       }
       .signup {
         display: inline-block;
@@ -21,34 +21,21 @@
          --paper-card-header : {
           background-color: #fff;
         }
-        background: url(../images/deko-big-top.png) ; 
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        background-color: #fff;
       }
       #cta-card {
         height: 500px;
       }
-      iron-image {
-        width: 268px;
-        height: 179px;
-      }
-      .biggercard iron-image {
-       /*width: 600px;
-       height: 450px;*/
+      #bg {
+        background-image: url('/images/deko-bg.jpg');
+        overflow: auto;
       }
     </style>
 
-      <div class="bg">
+      <div id="bg">
         <div class="papercards">
 
           <!--First Card with Image of Screens-->
-          <paper-card image="" elevation="1" animated-shadow="false" class="biggercard">   
-            <div class="card-content">
-              <!--<iron-image src="../images/deko-big-top.png" preload sizing="cover"></iron-image>  -->
-            </div>
+          <paper-card image="images/deko-big-top.png" elevation="1" animated-shadow="false" class="biggercard">   
           </paper-card>
 
           <!--Call to Action Card-->
@@ -73,6 +60,7 @@
                   <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_c7e2ceb5401024cc0c556db82_347409dce8" tabindex="-1" value=""></div>
                   <div class="clear">  
                   <input type="submit" value="Sign Up" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+         
                   </div>
               </form>
               </div>
@@ -83,8 +71,7 @@
           <!--Row 2 1st Card-->
           <paper-card heading="For You" elevation="1" animated-shadow="false" class="smallercard">        
             <iron-icon icon="face" class="card-icon"></iron-icon>  
-            <div class="card-content">          
-                <iron-image src="../images/avatars/lady-in-the-park.png" preload sizing="cover"></iron-image> 
+            <div class="card-content">
               <p>Looking for a simple solution to organising, storing & sharing web content in one place? Use deko</p>
             </div>
             <div class="card-actions">
@@ -96,7 +83,6 @@
           <paper-card heading="For Loved Ones" elevation="1" animated-shadow="false" class="smallercard">
             <iron-icon icon="favorite" class="card-icon"></iron-icon>
             <div class="card-content">
-                <iron-image src="../images/avatars/loved-ones.png" preload sizing="cover"></iron-image> 
               <p>Don’t have the time to be your parents tech. support? Solve the problem & your worries by using deko.</p>
             </div>
             <div class="card-actions">
@@ -108,7 +94,6 @@
           <paper-card heading="For Work" elevation="1" animated-shadow="false" class="smallercard">
             <iron-icon icon="social:domain" class="card-icon"></iron-icon> 
             <div class="card-content">
-                <iron-image src="../images/avatars/work-avatars.png" preload sizing="cover"></iron-image> 
               <p>Create, organise & share curated content with colleagues. Sort onto cards then group
                  into decks.</p>
             </div>
@@ -140,11 +125,11 @@
 
         </div>
 
-      </div>
         <footer>
 
         </footer>
         
+      </div>
       
       <paper-button raised id="contactus"><iron-icon icon="mail"></iron-icon>Contact Us</paper-button>
       
