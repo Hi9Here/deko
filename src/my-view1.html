@@ -7,7 +7,7 @@
 
     <style include="shared-styles">
       #emailsignup {
-        width: 200px;
+        
       }
       .signup {
         display: inline-block;
@@ -29,8 +29,10 @@
         width: 268px;
         height: 179px;
       }
-      paper-card .card-content {
-        padding: 0px;
+      .biggercard iron-image {
+       /*width: 600px;
+       height: 450px;*/
+       background: url(../images/deko-big-top.png);
       }
     </style>
 
@@ -38,7 +40,10 @@
         <div class="papercards">
 
           <!--First Card with Image of Screens-->
-          <paper-card image="images/deko-big-top.png" elevation="1" animated-shadow="false" class="biggercard">   
+          <paper-card image="" elevation="1" animated-shadow="false" class="biggercard">   
+            <div class="card-content">
+              <!--<iron-image src="../images/deko-big-top.png" preload sizing="cover"></iron-image>  -->
+            </div>
           </paper-card>
 
           <!--Call to Action Card-->
@@ -63,7 +68,6 @@
                   <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_c7e2ceb5401024cc0c556db82_347409dce8" tabindex="-1" value=""></div>
                   <div class="clear">  
                   <input type="submit" value="Sign Up" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-         
                   </div>
               </form>
               </div>
