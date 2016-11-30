@@ -21,24 +21,21 @@
          --paper-card-header : {
           background-color: #fff;
         }
-        background: url(../images/deko-big-top.png) ; 
+        /*background: url(../images/deko-big-top.png) ; 
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
-        background-size: cover;
+        background-size: cover;*/
         background-color: #fff;
       }
       #cta-card {
         height: 500px;
       }
       iron-image {
-        width: 268px;
+        width: 100%;
         height: 179px;
       }
-      .biggercard iron-image {
-       /*width: 600px;
-       height: 450px;*/
-      }
+      
     </style>
 
       <div class="bg">
@@ -47,7 +44,7 @@
           <!--First Card with Image of Screens-->
           <paper-card image="" elevation="1" animated-shadow="false" class="biggercard">   
             <div class="card-content">
-              <!--<iron-image src="../images/deko-big-top.png" preload sizing="cover"></iron-image>  -->
+              <iron-image src="../images/deko-big-top.png" preload sizing="contain"></iron-image>
             </div>
           </paper-card>
 
@@ -84,7 +81,7 @@
           <paper-card heading="For You" elevation="1" animated-shadow="false" class="smallercard">        
             <iron-icon icon="face" class="card-icon"></iron-icon>  
             <div class="card-content">          
-                <iron-image src="../images/avatars/lady-in-the-park.png" preload sizing="cover"></iron-image> 
+                <iron-image src="../images/avatars/lady-in-the-park.png" preload sizing="contain"></iron-image> 
               <p>Looking for a simple solution to organising, storing & sharing web content in one place? Use deko</p>
             </div>
             <div class="card-actions">
@@ -96,7 +93,7 @@
           <paper-card heading="For Loved Ones" elevation="1" animated-shadow="false" class="smallercard">
             <iron-icon icon="favorite" class="card-icon"></iron-icon>
             <div class="card-content">
-                <iron-image src="../images/avatars/loved-ones.png" preload sizing="cover"></iron-image> 
+                <iron-image src="../images/avatars/loved-ones.png" preload sizing="contain"></iron-image> 
               <p>Don’t have the time to be your parents tech. support? Solve the problem & your worries by using deko.</p>
             </div>
             <div class="card-actions">
@@ -108,7 +105,7 @@
           <paper-card heading="For Work" elevation="1" animated-shadow="false" class="smallercard">
             <iron-icon icon="social:domain" class="card-icon"></iron-icon> 
             <div class="card-content">
-                <iron-image src="../images/avatars/work-avatars.png" preload sizing="cover"></iron-image> 
+                <iron-image src="../images/avatars/work-avatars.png" preload sizing="contain"></iron-image> 
               <p>Create, organise & share curated content with colleagues. Sort onto cards then group
                  into decks.</p>
             </div>
