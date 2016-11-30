@@ -30,7 +30,6 @@
         --app-secondary-color: black;
         display: block;
       }
-
     </style>
 
     <app-location route="{{route}}"></app-location>
@@ -39,12 +38,10 @@
         pattern="/:page"
         data="{{routeData}}"
         tail="{{subroute}}"></app-route>
-
     <app-drawer-layout fullbleed>
      
       <!-- Main content -->
       <app-header-layout has-scrolling-region>
-
         <iron-pages
             selected="[[page]]"
             attr-for-selected="name"
