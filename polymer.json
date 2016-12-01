@@ -8,7 +8,7 @@
     "src/my-forwork.html",
     "src/my-ourmission.html",
     "src/my-contactus.html",
-    "src/my-view404.html"
+    "src/my-404.html"
   ],
   "sourceGlobs": [
    "src/**/*",

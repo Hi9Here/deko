@@ -46,7 +46,7 @@
         <iron-pages
             selected="[[page]]"
             attr-for-selected="name"
-            fallback-selection="view404"
+            fallback-selection="404"
             role="main">
           <my-home name="home"></my-home>
           <my-foryou name="foryou"></my-foryou>
@@ -54,7 +54,7 @@
           <my-forwork name="forwork"></my-forwork>
           <my-ourmission name="ourmission"></my-ourmission>
           <my-contactus name="contactus"></my-contactus>
-          <my-view404 name="view404"></my-view404>
+          <my-404 name="404"></my-404>
         </iron-pages>
       </app-header-layout>
     </app-drawer-layout>
@@ -87,7 +87,7 @@
       },
 
       _showPage404: function() {
-        this.page = 'view404';
+        this.page = '404';
       }
     });
   </script>
