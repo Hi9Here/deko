@@ -48,7 +48,7 @@
             attr-for-selected="name"
             fallback-selection="view404"
             role="main">
-          <my-view1 name="view1"></my-view1>
+          <my-home name="home"></my-home>
           <my-foryou name="foryou"></my-foryou>
           <my-forlovedones name="forlovedones"></my-forlovedones>
           <my-forwork name="forwork"></my-forwork>
@@ -76,7 +76,7 @@
       ],
 
       _routePageChanged: function(page) {
-        this.page = page || 'view1';
+        this.page = page || 'home';
       },
 
       _pageChanged: function(page) {
