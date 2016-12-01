@@ -30,18 +30,7 @@
         width: 100%;
         height: 179px;
       }
-      #fullcard-text {
-        width: 70%;
-      }
-      .fullcard {
-        background: url(../images/rocket@2x.png) no-repeat;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        background-color: #fff;
-        height: 600px;
-      }
+     
       
     </style>
 
@@ -130,7 +119,7 @@
           </paper-card>
 
           <!--Row 3 About Us-->
-          <paper-card heading="Our Mission" elevation="1" animated-shadow="false" class="fullcard">
+          <paper-card heading="Our Mission" elevation="1" animated-shadow="false" class="fullcard" id="mission-card">
             <div class="card-content">
               <div id="fullcard-text">
                 <p>We created deko because we believe using the web should be simple.</p>   
@@ -147,8 +136,16 @@
         </div>
 
       </div>
-        <footer>
-
+        <footer> 
+          <div id="footer-icons">
+            <iron-icon icon="my-icons:twitter"></iron-icon>        
+            <iron-icon icon="my-icons:facebook"></iron-icon>        
+            <iron-icon icon="my-icons:linkedin"></iron-icon>        
+            <iron-icon icon="my-icons:mail"></iron-icon> 
+          </div>  
+          <div id="footer-company">
+            <h4>deko is a Hi9 Limited product which is a company registered in England and Wales (No. 09162415).</h4>
+          </div>         
         </footer>
         
       
