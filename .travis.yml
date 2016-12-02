@@ -17,6 +17,6 @@ before_script:
   - bower install
   - npm install -g firebase-tools
 script:
-  - xvfb-run polymer test
+  - polymer test
   - polymer build
   - firebase deploy --token=${FIREBASE_API_TOKEN}
