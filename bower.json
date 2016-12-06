@@ -24,7 +24,7 @@
     "gold-email-input": "PolymerElements/gold-email-input#^1.0.8",
     "iron-form": "PolymerElements/iron-form#^1.1.4",
     "polymerfire": "firebase/polymerfire#^0.10.3",
-    "mail-chimp": "marcus7777/mail-chimp"
+    "mail-chimp": "hi9here/mail-chimp"
   },
   "devDependencies": {
     "web-component-tester": "^4.0.0"
